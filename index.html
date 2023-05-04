@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+      font-size: 18px;
+    }
+
+    header {
+      background-color: #f5f5f5;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding: 0 30px;
+      justify-content: center;
+    }
+
+    header .header-content {
+      max-width: 1100px;
+      display: flex;
+      width: 100%;
+    }
+
+    header img {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      margin-right: 30px;
+    }
+
+    header h1 {
+      font-size: 28px;
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+
+    header h2 {
+      font-size: 22px;
+      margin-top: 0;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 40px;
+      max-width: 1100px;
+      margin: 0 auto;
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+    }
+
+    .about, .resume, .custom-section {
+      padding: 25px;
+      border: 1px solid #ccc;
+      background-color: #f5f5f5;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+    }
+
+    .about {
+      width: 60%;
+      margin-right: 10px;
+    }
+
+    .resume {
+      width: 30%;
+      margin-right: 10px;
+    }
+
+    .custom-section {
+      width: 100%;
+    }
+
+    a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .resume-preview {
+      border: 1px solid #ccc;
+      width: 100%;
+      height: 240px;
+      overflow: hidden;
+      position: relative;
+      margin-top: 15px;
+    }
+
+    .resume-preview iframe {
+      position: absolute;
+      top: -80px;
+      left: 0;
+      width: 100%;
+      height: 400px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src=".\picture.jpeg" alt="Your Name">
+      <div>
+        <h1>Micah Glesener</h1>
+        <h2>Willamette University MBA Candidate</h2>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="about">
+      <h3>About Me</h3>
+      <p>
+        As a recent graduate with a strong background in economics, finance, and data analysis, I am eager to apply my skills and knowledge to a professional setting. I have consistently demonstrated a learning mindset and strong work ethic throughout my academic career, and I am excited to take on new challenges and responsibilities in the workplace.
+
+I am particularly interested in working with individuals who bring diverse perspectives and expertise to the table as I like to be able to sharpen my own thoughts and skill. I am confident in my ability to adapt to new environments and learn quickly, and I am eager to contribute my unique perspective and skills to my team.
+
+As I begin my career journey, I welcome the opportunity to connect with professionals in my field and learn from their experiences. Please feel free to reach out to me if you have any advice or insights to share. I look forward to building new connections and growing both personally and professionally.
+      </p>
+    </section>
+    <section class="resume">
+      <h3>Resume</h3>
+      <p>
+        <a href=".\resume.pdf" target="_blank">Download PDF Resume</a>
+      </p>
+      <div class="resume-preview">
+        <iframe src=".\resume.pdf" frameborder="0"></iframe>
+      </div>
+    </section>
+  </main>
+</body>
